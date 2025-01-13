@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping India - Buy mobiles, laptops, cameras, books, watches, apparel, shoes and e-Gift Cards. Free
+        Shipping & Cash on Delivery Available</title>
+
+    <!-- favicon  -->
+
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png">
+
+    <!-- link css file  -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap cdn  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!-- font  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+    <!-- header start  -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img class="navbar-brand mt-1" src="images/logo.png" alt="" height="40" width="100">
+            <a class="navbar-brand" href="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="text-white nav-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Amazon miniTV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Sell</a>
+                    </li>
+                    <li class="nav-item dropdown text-white">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Fashion
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Men's Fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Femail's fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Children Fashion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown text-white">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Electronics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Cameras & Photography</a></li>
+                            <li><a class="dropdown-item" href="#">Car & Vehicle Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Computers & Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">GPS & Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Home Audio</a></li>
+                            <li><a class="dropdown-item" href="#">Home Theater, TV & Video</a></li>
+                            <li><a class="dropdown-item" href="#">Mobiles & Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Portable Media Players</a></li>
+                            <li><a class="dropdown-item" href="#">Radio Communication</a></li>
+                            <li><a class="dropdown-item" href="#">Power Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white">Mobiles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white">Today's Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white">New Releases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white">Customer Service</a>
+                    </li>
+                </ul>
+                <form class="d-flex mt-2" role="search" id="searchForm">
+                    <div class="login d-flex ">
+                        <i class="fa-solid fa-user mt-2 login-icon"></i>
+                        <p type="" class="login-button pt-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            login
+                        </p>
+                    </div>
+                    <a href="cart.html">
+                        <div id="cart-indicator">
+                            <button type="button"><span class="item-count">0</span></button>
+                        </div>
+                    </a>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        id="searchInput">
+                    <button class="btn btn-outline-light" id="serch-button" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="main d-flex align-items-center justify-content-center">
+        <div class="row container-xl p-3 bg-white" id="main">
+            <div class="col image d-none d-md-block w-100 h-100">
+                <img class="rounded w-100 h-100" src="images/1.png" alt="">
+            </div>
+            <div class="col text px-1 px-sm-5 my-auto w-md-100" style="position: relative;">
+                <p class="h2">Hello, Again</p>
+                <p class="h5">We are happy to have you back.</p>
+                <form class="d-grid">
+                    <div class="mb-3">
+                        <p id="alert"></p>
+                        <input type="email" placeholder="Email Address" class="form-control mt-3 bg-light"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" placeholder="password" class="form-control bg-light"
+                            id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check d-flex justify-content-between">
+                        <div class="input-1">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                        </div>
+                        <div class="input-2">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </div>
+                    <button id="login-submit" class="btn btn-primary py-2 mt-4">Submit</button>
+                    <button type="submit" class="btn btn-light mt-4"> <img src="images/3.webp" style="width: 7%;" alt="">
+                        Sign in with Google</button>
+                    <p class="mt-3 sign">Don't Have Account?<a href="#" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Sign Up</a></p>
+                </form>
+                <a href=""><button id="back-btn">back</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="signup justify-content-center align-items-center">
+        <form class="d-grid bg-white w-md-50 justify-content-center px-4 px-sm-5">
+            <br>
+            <p id="alert2"></p>
+            <div class="mb-3">
+                <input type="text" placeholder="Enter Your Name" class="form-control mt-3 bg-light"
+                    id="exampleInputName2" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <input type="email" placeholder="Enter Your Email" class="form-control bg-light"
+                    id="exampleInputEmail2" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="Create Password" class="form-control bg-light"
+                    id="exampleInputpass2" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <input type="password" placeholder="Confirm Password" class="form-control bg-light"
+                    id="exampleInputPassword2">
+            </div>
+            <div class="mb-3 form-check">
+                <div class="input-1">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                    <label class="form-check-label" for="exampleCheck2">I accept all terms & conditions</label>
+                </div>
+            </div>
+            <button id="register-btn" class="btn btn-primary py-2 mt-4">Register Now</button>
+            <button type="submit" class="btn btn-light mt-4"> <img src="images/3.webp" style="width: 4%;" alt="">
+                Sign in with Google</button>
+            <p class="mt-3 login">Already have an account? <a href="#" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Login</a></p>
+            <a href="" class="mb-4"><button id="back-btn">back</button></a>
+        </form>
+    </div>
+</div>
+
+    <!-- header end  -->
+
+    <!-- slider start  -->
+
+    <br>
+    <div class="slider">
+        <div class="slide active" id="slide1"></div>
+        <div class="slide" id="slide2"></div>
+        <div class="slide" id="slide3"></div>
+
+        <div class="prev" onclick="slider.prev()"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="next" onclick="slider.next()"><i class="fa-solid fa-chevron-right"></i></div>
+    </div>
+
+
+    <!-- product start  -->
+
+    <h1 class="product-heading">Mobiles & Accessories</h1>
+
+    <div class="short-button">
+
+       <a href=""> <button>All</button></a>
+        <button onclick="filterByBrand('OnePlus')">OnePlus</button>
+        <button onclick="filterByBrand('Samsung')">Samsung</button>
+        <button onclick="filterByBrand('Xiaomi')">Xiaomi</button>
+
+        <label class="label-short" for="short">short by price</label>
+        <select name="" id="sort" onchange="sortProducts()">
+            <option value="all">ALL</option>
+            <option value="9000-15000">9000-15000</option>
+            <option value="15000-20000">15000-20000</option>
+            <option value="20000-30000">20000-30000</option>
+            <option value="30000">30000+</option>
+            <option value="asc">low to high</option>
+            <option value="desc">higt to low</option>
+        </select>
+    </div>
+    <div id="product-container"></div>
+
+    <!-- link js file  -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

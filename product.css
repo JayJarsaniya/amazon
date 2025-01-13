@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* header css start  */
+
+nav {
+    background-color: #232f3e;
+    color: white;
+}
+
+.cart {
+    font-size: 24px;
+}
+
+.nav-icon {
+    font-size: 25px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.product-details {
+    padding: 50px 50px;
+}
+
+.product-details img {
+    height: 600px;
+    width: auto;
+}
+
+#product-price {
+    font-size: 25px !important;
+    color: rgba(255, 0, 0, 0.715);
+    margin: 10px 0px;
+    font-weight: 500;
+}
+
+#product-brand,
+#product-system,
+#product-storage,
+#product-modal {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+b {
+    font-size: 18px;
+    color: black;
+    margin-right: 8px;
+}
+
+.main-product-div {
+    display: flex;
+    gap: 50px;
+}
+
+#product-name {
+    border-bottom: 2px dotted black;
+    padding-bottom: 15px;
+}
+
+#product-description {
+    display: flex;
+}
+
+#offer-img {
+    height: 30px !important;
+}
+
+.offer-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0px 20px 0px;
+}
+
+.offer-sub {
+    width: 170px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.offer-sub p {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.offer-sub a {
+    text-decoration: none;
+}
+
+.warranty-main {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.warranty-sub {
+    width: 100px;
+    text-align: center;
+}
+
+.warranty-sub {
+    font-weight: 500;
+}
+
+.warranty-sub img {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 10px 0px;
+}
+
+.add-to-cart,
+#add-to-cart1 {
+    font-size: 18px;
+    color: #f08804;
+    font-weight: 600;
+    padding: 8px 40px;
+    border: 1px solid #f08804;
+    background: transparent;
+    margin-top: 30px;
+}
+
+#add-to-cart i {
+    padding-right: 12px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .product-details img {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 935px) {
+    .product-details {
+        padding: 50px 10px 50px 20px;
+    }
+
+    .main-product-div {
+        display: block !important;
+    }
+
+    .product-actions {
+        overflow-y: visible;
+        height: auto;
+    }
+
+    .product-img {
+        text-align: center;
+    }
+
+    .product-img img {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .product-details img {
+        height: 300px;
+    }
+
+    .offer-main {
+        text-align: center;
+        justify-content: center;
+    }
+
+    #product-description {
+        display: block;
+    }
+
+    #add-to-cart {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .product-details img {
+        height: 200px;
+    }
+
+    #product-name {
+        font-size: 20px;
+    }
+
+    b {
+        font-size: 15px;
+    }
+
+    #product-brand,
+    #product-system,
+    #product-storage,
+    #product-modal {
+        font-size: 14px;
+    }
+
+    .warranty-main {
+        justify-content: center;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* header css end  */
+
+#product-stock{
+    margin-bottom: 0px !important;
+}
