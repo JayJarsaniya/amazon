@@ -696,9 +696,9 @@ function displayResults(results) {
     if (results.length > 0) {
         results.forEach(product => {
             const productElement = document.createElement('div');
-        productElement.className = 'product';
+            productElement.className = 'product';
 
-        productElement.innerHTML = `
+            productElement.innerHTML = `
         <div>
             <a href="product.html?id=${product.id}" id="main-product">
                 <img src="${product.image}" alt="${product.name}">
@@ -713,7 +713,7 @@ function displayResults(results) {
             <button class="btn2" onclick="addToCart('${product.id}')">Add To Cart</button>
         </div>
         `;
-        productContainer.appendChild(productElement);
+            productContainer.appendChild(productElement);
         });
     } else {
         productContainer.innerHTML = "<p>No products found.</p>";
@@ -955,7 +955,7 @@ function renderCart() {
         cartItem.className = 'cart-item';
         cartItem.innerHTML = `
         
-            <div class="main">
+            <div class="main1">
                 <div class="img">
                     <img src="${item.image}" alt="${item.name}">
                 </div>
@@ -994,11 +994,11 @@ function updateQuantity(productId, change) {
             return;
         }
 
-        cartItem.quantity += change;
-
-        if (cartItem.quantity <= 0) {
-            cart = cart.filter(item => item.id !== productId);
+        if (change < 0 && cartItem.quantity === 1) {
+            return;
         }
+
+        cartItem.quantity += change;
 
         localStorage.setItem('cart', JSON.stringify(cart));
         renderCart();

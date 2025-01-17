@@ -10,8 +10,23 @@
 
     <link rel="icon" type="image/png" sizes="32x32"
         href="https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png">
-        
+
     <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap cdn  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!-- favicon  -->
+
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -27,7 +42,73 @@
 </head>
 
 <body>
-    <div id="cart">
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img class="navbar-brand mt-1" src="images/logo.png" alt="" height="40" width="100">
+            <a class="navbar-brand" href="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="text-white nav-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Amazon miniTV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Sell</a>
+                    </li>
+                    <li class="nav-item dropdown text-white">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Fashion
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Men's Fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Femail's fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Children Fashion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown text-white">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Electronics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Cameras & Photography</a></li>
+                            <li><a class="dropdown-item" href="#">Car & Vehicle Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Computers & Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">GPS & Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Home Audio</a></li>
+                            <li><a class="dropdown-item" href="#">Home Theater, TV & Video</a></li>
+                            <li><a class="dropdown-item" href="#">Mobiles & Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Portable Media Players</a></li>
+                            <li><a class="dropdown-item" href="#">Radio Communication</a></li>
+                            <li><a class="dropdown-item" href="#">Power Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white">Mobiles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white">Today's Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white">New Releases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white">Customer Service</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div id="cart" class="mt-5">
         <div class="cart-heading d-flex justify-content-between">
             <h2>Shopping Cart</h2>
             <p>Price</p>
@@ -145,7 +226,6 @@
                                 <span v-for="(n, $index) in cardCvv" :key="$index">
                                     *
                                 </span>
-
                             </div>
                             <div class="card-item__type">
                                 <img v-bind:src="'https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/' + getCardType + '.png'"
@@ -334,7 +414,7 @@
                 return;
             }
 
-            if (cardCvv.length !== 3 && cardCvv.length !== 4 || !/^\d+$/.test(cardCvv)) {
+            if (cardCvv.length !== 3 || !/^\d+$/.test(cardCvv)) {
                 messageElement.textContent = 'Please enter a valid CVV.';
                 return;
             }
@@ -347,6 +427,10 @@
             document.getElementById('cardMonth').value = '';
             document.getElementById('cardYear').value = '';
             document.getElementById('cardCvv').value = '';
+
+            setTimeout(() => {
+                window.location.href = '/';
+            }, 1000);
         });
     </script>
 
